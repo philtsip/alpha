@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Googorola: by the numbers - Googlorola - Datacurious</title>
+		
+	    <!-- *** Hicharts JS *** -->
+		<!-- 1. Add these JavaScript inclusions in the head of your page -->
+
+		<!-- FOR LOCAL TESTING: -->
+		<script type="text/javascript" src="../assets/js/jquery-1.6.2.min.js"></script> 
+		<!-- -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="../assets/js/highcharts-p.min.js"></script>
+		<!-- 1a) Optional: add a theme file -->
+		<!-- <script type="text/javascript" src="../assets/js/themes/grid-p.js"></script> -->
+				
+		<!-- 2. Add the JavaScript to initialize the chart on document ready -->
+		<script type="text/javascript" src="charts.js"></script>
+	    <!-- *** END Hicharts JS *** -->
+		
+	    <!-- *** Blueprint Framework CSS *** -->
+	    <link rel="stylesheet" href="../assets/blueprint/screen.css" type="text/css" media="screen, projection">
+	    <link rel="stylesheet" href="../assets/blueprint/print.css" type="text/css" media="print">
+	    <!--[if lt IE 8]><link rel="stylesheet" href="../assets/../assets/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	    <!-- Import fancy-type plugin for the sample page. -->
+	    <link rel="stylesheet" href="../assets/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	    <!-- *** END Blueprint Framework CSS *** -->
+
+	    <!-- *** Typekit JS *** -->
+		<script type="text/javascript" src="http://use.typekit.com/djb4ubr.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	    <!-- *** END Typekit JS *** -->
+
+	    <!-- *** Google Analytics *** -->		
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-22600215-2']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+	    <!-- *** END Google Analytics *** -->
+		
+	</head>
+	<body>
+		
+		<!-- 3. Add the container -->
+		<p></p>
+
+	    <div class="container">
+
+		  
+
+ 			<!-- 4. Rest of the page -->
+		  <p></p>
+
+
+	      <h1>Googorola: by the numbers</h1>
+	      <h2 class="alt">A look behind Google's $12.5B acquisition</h2>
+	      <hr>
+	      <div class="span-10">
+	        <div id="chart_1" style="width: 500px; height: 300px; margin: 0 auto"></div>
+	      </div>
+		<hr>
+		
+	    <!-- *** Disqus *** -->		
+		<div id="disqus_thread"  class="span-10"></div>
+		<script type="text/javascript">
+		    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		    var disqus_shortname = 'datacurious'; // required: replace example with your forum shortname
+			var disqus_developer = 1; // REMOVE for PRODUCTION
+			
+		    // The following are highly recommended additional parameters. Remove the slashes in front to use.
+		    // var disqus_identifier = 'unique_dynamic_id_1234';
+		    // var disqus_url = 'http://example.com/permalink-to-page.html';
+
+		    /* * * DON'T EDIT BELOW THIS LINE * * */
+		    (function() {
+		        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		    })();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	    <!-- *** END Disqus *** -->		
+
+		<!-- 1b) Optional: the exporting module -->
+		<script type="text/javascript" src="../assets/js/modules/exporting.js"></script>
+
+	</body>
+</html>
