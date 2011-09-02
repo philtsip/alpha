@@ -30,7 +30,7 @@ $(document).ready(function() {
 					color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
 				},
 	            formatter: function() {
-	                return Highcharts.numberFormat(this.value, 1, '.') + '%';
+	                return Highcharts.numberFormat(this.total, 1, '.') + '%';
 	            }
 			}
 		},
@@ -43,7 +43,7 @@ $(document).ready(function() {
 			column: {
 				stacking: 'normal',
 	            dataLabels: {
-	               enabled: true,
+	               enabled: false,
 	               style: {
 	                  fontWeight: 'bold'
 	               },
