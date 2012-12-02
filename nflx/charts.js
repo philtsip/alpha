@@ -1,4 +1,7 @@
 var chart;
+var obj = {"Items":[{"Q0AvgSlsEst":"37306.000","Q1AvgSlsEst":"36462.000","Q2AvgSlsEst":"38430.000","Q3AvgSlsEst":"39405.000","Q4AvgSlsEst":"38958.000"}]};
+var var = obj.Items;
+
 $(document).ready(function() {
 	chart = new Highcharts.Chart({
 		chart: {
@@ -58,9 +61,8 @@ $(document).ready(function() {
 		},
 	        series: [{		
 			name: 'Motorola Mobile Revenue',
-			data = obj.Items[0]
+			data: var[0]
 		}]
-	});
-	
+	});	
 	
 });

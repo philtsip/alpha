@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Parsing Message using JSON in JavaScript</title>
+<script language="javascript" src="json2.js"></script>
+<script language="javascript" >
+var students = {
+   "Maths" : [ 
+  { "Name"  : "Amit",  // First element
+  "Marks" : 67,
+  "age" : 23 },  
+  {
+   "Name"   : "Sandeep",  // Second element
+  "Marks" : 65,
+  "age" : 21 }
+ ] 
+ } 
+// Printing Maths array values in the alert message
+var i=0
+var arrayObject = new Array();
+for(i=0;i<students.Maths.length;i++)
+{  
+  arrayObject.push(students.Maths[i].Name);
+  arrayObject.push(students.Maths[i].Marks);
+  arrayObject.push(students.Maths[i].age);
+}  
+  alert("Parsing JSON Message Example ");
+  alert(arrayObject.toJSONString().parseJSON());
+</script>
+</head>
+<body>
+ Parsing Message using JSON in JavaScript
+</body>
+</html>

@@ -1,4 +1,6 @@
 var chart;
+var chart2;
+
 $(document).ready(function() {
 	chart = new Highcharts.Chart({
 		chart: {
@@ -18,7 +20,8 @@ $(document).ready(function() {
 	            }
 	        },
 	        min: 0,	
-	        max: 15,	
+	        max: 15,
+			tickInterval: 3,
 			title: {	
 				text: 'Unemployment %'
 			},
@@ -86,4 +89,107 @@ $(document).ready(function() {
 **/
 	);
 		
+});
+
+var chart;
+$(document).ready(function() {
+	chart = new Highcharts.Chart({
+		chart: {
+			renderTo: 'chart_2',
+			defaultSeriesType: 'spline'
+		},
+		title: {
+			text: 'U.S. Unemployement - Apr-Aug 2011'
+		},
+		subtitle: {
+			text: '% (unemployed)',
+			align: "left"
+		},
+		xAxis: {
+			categories: ["Apr 11", "May 11", "Jun 11", "Jul 11", "Aug 11"]
+		},
+		yAxis: {
+			title: {
+				text: ''
+			},
+			min: 0,
+			max: 15,
+			minorGridLineWidth: 0, 
+			gridLineWidth: 0,
+			alternateGridColor: null,
+			plotBands: [{ // 
+				from: 0,
+				to: 5,
+				color: 'rgba(68, 170, 213, 0.1)',
+				label: {
+					text: '',
+					style: {
+						color: '#606060'
+					}
+				}
+			}, { // 
+				from: 5,
+				to: 10,
+				color: 'rgba(0, 0, 0, 0)',
+				label: {
+					text: '',
+					style: {
+						color: '#606060'
+					}
+				}
+			}, { // 
+				from: 10,
+				to: 15,
+				color: 'rgba(68, 170, 213, 0.1)',
+				label: {
+					text: '',
+					style: {
+						color: '#606060'
+					}
+				}
+			}]
+		},
+		plotOptions: {
+			spline: {
+	            dataLabels: {
+	               enabled: true,
+				   y: -15,
+	               formatter: function() {
+	                  return this.y +'%';
+	               }
+	            },              
+				lineWidth: 4,
+				states: {
+					hover: {
+						lineWidth: 5
+					}
+				},
+				marker: {
+					enabled: true,
+					states: {
+						hover: {
+							enabled: true,
+							symbol: 'circle',
+							radius: 5,
+							lineWidth: 1
+						}
+					}	
+				}
+			}
+		},
+		series: [{
+			name: 'Unemployment %',
+			data: [9, 9.1, 9.2, 9.1, 9.1]
+	
+		}
+		]
+		,
+		navigation: {
+			menuItemStyle: {
+				fontSize: '10px'
+			}
+		}
+	});
+	
+	
 });
